@@ -11,6 +11,6 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 @Builder
 public class ResponseDto<T> {
-    HttpStatus status;
+    int status; // HTTP 상태 코드
     T data;
 }
